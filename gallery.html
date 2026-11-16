@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Field Notes — Photo Archive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top-bar">
+    <h1>Field Notes</h1>
+    <p class="subtitle">Selected 35mm &amp; digital frames, 2024–2026</p>
+
+    <div class="filter-group" id="filters">
+      <button class="btn active" data-type="all">Everything</button>
+      <button class="btn" data-type="landscapes">Landscapes</button>
+      <button class="btn" data-type="portraits">Portraits</button>
+      <button class="btn" data-type="architecture">Architecture</button>
+    </div>
+  </header>
+
+  <section class="grid-container" id="grid">
+
+    <article class="photo-card" data-type="landscapes">
+      <div class="thumb">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdAX-V9tjXct4dFuxETRurUXapkrjNixYsCXX4xzXBvWYF8ySqFbCiLtK8&s=10" alt="Yosemite Valley at dusk">
+        <div class="caption">
+          <p>Last light hitting the granite walls in Yosemite Valley after an afternoon storm.</p>
+        </div>
+      </div>
+      <div class="meta">
+        <span class="badge">Landscapes</span>
+        <h2>Valley Dusk</h2>
+      </div>
+    </article>
+
+    <article class="photo-card" data-type="architecture">
+      <div class="thumb">
+        <img src="https://images.stockcake.com/public/1/c/b/1cbdf889-013c-4ad8-be79-23a0cbeb3536_large/sunny-minimalist-interior-stockcake.jpg" alt="Minimalist sunlit interior">
+        <div class="caption">
+          <p>Afternoon shadows cutting across a quiet concrete stairwell in Tokyo.</p>
+        </div>
+      </div>
+      <div class="meta">
+        <span class="badge">Architecture</span>
+        <h2>Afternoon Geometry</h2>
+      </div>
+    </article>
+
+    <article class="photo-card" data-type="portraits">
+      <div class="thumb">
+        <img src="https://media.istockphoto.com/id/1297159365/photo/portrait-of-young-smiling-woman-face-partially-covered-with-flying-hair-in-windy-day-standing.jpg?s=612x612&w=0&k=20&c=I16c_ZzQHEeGoPUVrVP9pPusSzsmymvVKdQVgPuVdDo=" alt="Studio close-up portrait">
+        <div class="caption">
+          <p>Shot on medium format film with a single window light source.</p>
+        </div>
+      </div>
+      <div class="meta">
+        <span class="badge">Portraits</span>
+        <h2>Window Study No. 4</h2>
+      </div>
+    </article>
+
+    <article class="photo-card" data-type="landscapes">
+      <div class="thumb">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbwwsrgF8lOYDcSrK2Z9kusIUwm1Od8LCd6n3cfwsdZgXyB6o9fF-j2Iw&s=10" alt="Jagged mountain peaks">
+        <div class="caption">
+          <p>Early morning climb above the cloud line in the Dolomites.</p>
+        </div>
+      </div>
+      <div class="meta">
+        <span class="badge">Landscapes</span>
+        <h2>Above the Drift</h2>
+      </div>
+    </article>
+
+    <article class="photo-card" data-type="portraits">
+      <div class="thumb">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE9qbq9f8x_HAT07p5EzZ5uy1CpZDfrjnrYcdU3lunaHGV0-CoYPg23kA&s=10" alt="Man smiling outdoors">
+        <div class="caption">
+          <p>Quick candid frame captured between rain showers on 5th Street.</p>
+        </div>
+      </div>
+      <div class="meta">
+        <span class="badge">Portraits</span>
+        <h2>Between Showers</h2>
+      </div>
+    </article>
+
+    <article class="photo-card" data-type="architecture">
+      <div class="thumb">
+        <img src="https://media.istockphoto.com/id/1351571961/photo/looking-directly-up-at-the-skyline-of-the-financial-district-in-central-london.jpg?s=612x612&w=0&k=20&c=4J_aWJc5gMATCtIbMkF0dMq4dzz_XjLx5DpwnuPJwkg=" alt="Glass facade looking up">
+        <div class="caption">
+          <p>Steel and reflective glass repeating into an overcast winter sky.</p>
+        </div>
+      </div>
+      <div class="meta">
+        <span class="badge">Architecture</span>
+        <h2>Steel Grid</h2>
+      </div>
+    </article>
+
+    <article class="photo-card" data-type="landscapes">
+      <div class="thumb">
+        <img src="https://images.pexels.com/photos/28811877/pexels-photo-28811877/free-photo-of-misty-pine-forest-in-autumn-colors.jpeg" alt="Foggy pine forest">
+        <div class="caption">
+          <p>Heavy coastal fog settling deep into the redwoods just after sunrise.</p>
+        </div>
+      </div>
+      <div class="meta">
+        <span class="badge">Landscapes</span>
+        <h2>Coastal Fog</h2>
+      </div>
+    </article>
+
+    <article class="photo-card" data-type="architecture">
+      <div class="thumb">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOHYvth2GMGLSpqMT9Zd_uzzI4pfXApKumqzjaU3A1IwHZcOqWnom9-Qs&s=10" alt="Curved modern museum roof">
+        <div class="caption">
+          <p>Sweeping white curves and sharp structural ribs at the cultural pavilion.</p>
+        </div>
+      </div>
+      <div class="meta">
+        <span class="badge">Architecture</span>
+        <h2>White Pavilion</h2>
+      </div>
+    </article>
+
+    <article class="photo-card" data-type="portraits">
+      <div class="thumb">
+        <img src="https://substackcdn.com/image/fetch/$s_!2ggH!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F1d7ef945-411e-4662-a119-955f49f2e76d_772x1160.png" alt="Natural light portrait">
+        <div class="caption">
+          <p>Late golden hour warmth bouncing off a brick alley wall.</p>
+        </div>
+      </div>
+      <div class="meta">
+        <span class="badge">Portraits</span>
+        <h2>Alleyway Gold</h2>
+      </div>
+    </article>
+
+    <article class="photo-card" data-type="landscapes">
+      <div class="thumb">
+        <img src="https://i.redd.it/51poawio2c651.jpg" alt="Alpine lake reflection">
+        <div class="caption">
+          <p>Dead-calm water mirroring the surrounding peaks at 6:00 AM.</p>
+        </div>
+      </div>
+      <div class="meta">
+        <span class="badge">Landscapes</span>
+        <h2>Still Water</h2>
+      </div>
+    </article>
+
+    <article class="photo-card" data-type="architecture">
+      <div class="thumb">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIXWOjFYSPNRInKH-5Qc37_GuYs884CTtreQnPgDAXm3HP1kIlHjjWx6Y&s=10" alt="Minimalist building exterior">
+        <div class="caption">
+          <p>Muted limestone facade paired with deep recessed windows.</p>
+        </div>
+      </div>
+      <div class="meta">
+        <span class="badge">Architecture</span>
+        <h2>Limestone &amp; Shadow</h2>
+      </div>
+    </article>
+
+    <article class="photo-card" data-type="portraits">
+      <div class="thumb">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfeHqrKK4LH_Qo4UjJg-mU8qBqAl1k5lccOAgf_KLPkfzFZCEo0hIPcHM&s=10" alt="Editorial portrait">
+        <div class="caption">
+          <p>Editorial test shoot focusing on natural texture and muted tones.</p>
+        </div>
+      </div>
+      <div class="meta">
+        <span class="badge">Portraits</span>
+        <h2>Muted Tones</h2>
+      </div>
+    </article>
+
+  </section>
+
+  <script>
+    const filterBox = document.getElementById('filters');
+    const allCards = document.querySelectorAll('.photo-card');
+
+    filterBox.addEventListener('click', (e) => {
+      if (!e.target.classList.contains('btn')) return;
+
+      // Toggle active pill
+      filterBox.querySelector('.active').classList.remove('active');
+      e.target.classList.add('active');
+
+      const choice = e.target.dataset.type;
+
+      allCards.forEach((card) => {
+        const match = choice === 'all' || card.dataset.type === choice;
+
+        if (match) {
+          card.style.display = 'grid';
+          requestAnimationFrame(() => card.classList.remove('dimmed'));
+        } else {
+          card.classList.add('dimmed');
+          setTimeout(() => {
+            if (card.classList.contains('dimmed')) {
+              card.style.display = 'none';
+            }
+          }, 260);
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

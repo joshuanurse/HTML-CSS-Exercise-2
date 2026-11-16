@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #141413;
+  color: #f3f0ea;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  padding: 48px 24px;
+}
+
+.top-bar {
+  max-width: 1240px;
+  margin: 0 auto 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.top-bar h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.4rem;
+  font-weight: normal;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  color: #9e9a91;
+  font-size: 0.95rem;
+  margin-bottom: 14px;
+}
+
+/* Flexbox for filter controls */
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn {
+  background: transparent;
+  color: #c8c3b8;
+  border: 1px solid #33322e;
+  padding: 8px 18px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn:hover {
+  border-color: #d96b43;
+  color: #f3f0ea;
+}
+
+.btn.active {
+  background-color: #d96b43;
+  border-color: #d96b43;
+  color: #141413;
+  font-weight: 600;
+}
+
+/* CSS Grid for main gallery: 4 columns on desktop */
+.grid-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* CSS Grid for each card */
+.photo-card {
+  display: grid;
+  grid-template-rows: 240px auto;
+  background-color: #1d1c1a;
+  border: 1px solid #2b2a27;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.28s ease, opacity 0.26s ease, border-color 0.28s ease;
+}
+
+.photo-card:hover {
+  transform: translateY(-4px);
+  border-color: #4a4741;
+}
+
+/* Filtering animation state */
+.photo-card.dimmed {
+  opacity: 0;
+  transform: scale(0.96);
+}
+
+.thumb {
+  position: relative;
+  overflow: hidden;
+  background-color: #252421;
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.45s ease;
+}
+
+.photo-card:hover .thumb img {
+  transform: scale(1.04);
+}
+
+/* Hover overlay */
+.caption {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 20, 19, 0.84);
+  padding: 20px;
+  display: grid;
+  align-content: end;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: #eae6df;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.photo-card:hover .caption {
+  opacity: 1;
+}
+
+.meta {
+  padding: 14px 16px 16px;
+  display: grid;
+  gap: 6px;
+}
+
+.badge {
+  justify-self: start;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #d96b43;
+}
+
+.meta h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.1rem;
+  font-weight: normal;
+  color: #f3f0ea;
+}
+
+/* Tablet: 2 columns */
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 600px) {
+  body {
+    padding: 32px 16px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
